@@ -1,0 +1,1 @@
+# fastwin-parity-app

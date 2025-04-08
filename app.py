@@ -32,7 +32,7 @@ def determine_color(num):
 
 # --- Layout Setup ---
 st.set_page_config(layout="centered")
-st.title("🚀 NUMAIR BHAI")
+st.title("💰💸FRIZO WIN🏧💰")
 
 # Navigation (Tab Simulation)
 tab = st.selectbox("Select Tab", ["Home", "Fast-Parity"])

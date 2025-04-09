@@ -99,23 +99,6 @@ elif tab == "Fast-Parity":
                 st.error("Insufficient balance!")
 
     st.markdown("---")
-  st.write("### 🎯 All Recent Results (Latest First)")
-
-if len(st.session_state.fast_parity_results) > 0:
-    results_to_show = st.session_state.fast_parity_results[-100:]  # Show last 100 results
-    for result in reversed(results_to_show):  # Show newest first
-        st.markdown(
-            f"<div style='padding:6px; border-bottom:1px solid #ddd;'>"
-            f"<b>Period:</b> {result['period']} | "
-            f"<b>Number:</b> {result['number']} | "
-            f"<b>Color:</b> <span style='color:{'green' if result['color']=='Green' else 'red' if result['color']=='Red' else 'purple'};'>{result['color']}</span>"
-            f"</div>",
-            unsafe_allow_html=True
-        )
-else:
-    st.info("No results yet.")
-        
-    st.markdown("---")
     st.write("### 📜 Bet History")
     for b in reversed(st.session_state.fast_parity_bets[-5:]):
         st.write(f"Period {b['period']} - {b['choice']} | ₹{b['amount']} | Number: {b['number']}")
